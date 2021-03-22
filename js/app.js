@@ -65,7 +65,7 @@ class UI {
                 <td>imagen</td>
                 <td>${carrito.nombreCarrito}</td>
                 <td>${carrito.precioCarrito}</td>
-                <td><a href="#"><img name="eliminar" class="basurero" src="tugurio.svg" alt="basurero"></a></td>           
+                <td><a href="#"><img name="eliminar" class="basurero" src="img/tugurio.svg" alt="basurero"></a></td>           
             `;
             botones.insertAdjacentElement("beforebegin", elementoCarrito);
         }

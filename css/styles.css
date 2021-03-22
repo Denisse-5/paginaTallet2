@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+    overflow: scroll;
+}
+
+.reloj {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mensaje {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    color: black;
+    padding: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+}
+
+hr {
+    width: 96%;
+    height: .1px;
+    background-color: #c7c7c7;
+    border: .1px none #c7c7c7;
+    box-shadow: 0px 2px 10px #adadad;
+    margin-top: 50px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-width: 100%;
+    /* margin: auto;*/
+    text-align: center;
+    font-family: arial;
+    margin: 50px;
+}
+
+img {
+    /* filter: grayscale(100%); */
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* :hover {
+    filter: none;
+    } */
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+
+/* estilos de la cabeza */
+
+.flex-titulo {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px -15px;
+}
+
+.flex-titulo div {
+    border-left: solid;
+    margin-left: 10px;
+}
+
+span {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 38px;
+}
+
+.flex-titulo p {
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+.parrafos p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+.navegacion-cabeza {
+    background-color: #242424;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.navegacion-cabeza a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+}
+
+.navegacion-cabeza a:hover {
+    color: #b1a9a9;
+}
+
+.reloj p {
+    margin: 0;
+    padding: 10px;
+}
+
+.imagen-carrito {
+    width: 35px;
+}
+
+.contenedor-carrito {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.carrito {
+    display: block;
+    position: relative;
+}
+
+.carrito table {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    color: #9ba4b4;
+    background-color: #f2f2f2;
+    box-shadow: 0px 3px 20px #ececec;
+}
+
+.carrito table th {
+    padding: 13px;
+    text-align: center;
+}
+
+.carrito table td {
+    padding: 13px;
+    text-align: center;
+}
+
+.carrito:hover table {
+    display: block;
+}
+
+.botones-carrito {
+    background-color: black;
+}
+
+.botones-carrito a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img.basurero {
+    width: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.lista {
+    background-color: #f9f3f3;
+    line-height: 90px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.lista ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.lista ul li {
+    display: inline;
+    padding: 10px;
+    margin: 0 10px;
+    color: #ffffff;
+    background-color: #000000;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.eliminar a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #f9f3f3;
+}
+
+.eliminar a:hover {
+    color: rgb(250, 140, 100);
+}
+
+i {
+    margin: 0 15px;
+}
+
+.email-symbol {
+    margin: 0 1px 0 0;
+    color: rgb(179, 179, 179);
+}
+
+.parrafo-marca {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.spam-marca {
+    font-size: 18px;
+}
+
+.formulario {
+    margin: 0 auto;
+    min-width: 380px;
+    width: 60%;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0px 3px 20px #ececec;
+}
+
+.formulario legend {
+    color: #222831;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+.formulario fieldset {
+    border: none;
+    margin: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input:not(input[type=submit]) {
+    margin: 8px;
+    border: none;
+    padding: 7px;
+    width: 80%;
+}
+
+input[type=submit] {
+    margin-top: 10px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fcfcfc;
+    border: none;
+    cursor: pointer;
+    padding: 10px 12px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.parrafo-footer {
+    margin: 0 0 5px 0;
+}
+
+.parrafo-color-grey {
+    color: #545454;
+}
+
+.navegacion-pie a {
+    text-decoration: none;
+    color: #606060;
+    font-family: 'Noto Serif JP', serif;
+    margin: 0 10px;
+}
+
+.navegacion-pie a:hover {
+    color: #1a1a1a;
+    border-bottom: solid;
+}
+
+.navegacion-pie-redes a {
+    color: #606060;
+    font-size: 19px;
+}
+
+.navegacion-pie-redes a:hover {
+    color: #343434;
+}

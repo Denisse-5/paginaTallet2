@@ -1,31 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punto de venta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Coda+Caption:wght@800&family=Noto+Serif+JP:wght@200&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/ccf908b2cd.js" crossorigin="anonymous"></script>
+    <style>
+        .flex-titulo {
+            display: flex;
+        }
+        
+        .flex-contenedor {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .flex-contenedor-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 50px 30px;
+        }
+    </style>
 </head>
 
+
 <body onload="bienvenida()">
-    <div id="mostrar_mensaje"></div>
-    <p id="fecha"></p>
-    <p id="hora"></p>
-    <form action="" id="formulario" method="POST">
-        <label for="producto">Producto</label>
-        <input type="text" name="producto" id="producto" placeholder="Introduce el nombre del producto">
 
-        <label for="departamento">Departamento</label>
-        <input type="text" name="departamento" id="departamento" placeholder="Introduce el departamento">
+    <header>
+        <div class="flex-titulo">
+            <p>style<span>code</span></p>
+            <div class="parrafos">
+                <p>tienda</p>
+                <p>online</p>
+            </div>
+        </div>
 
-        <label for="costo">Costo</label>
-        <input type="text" name="costo" id="costo" placeholder="introduce el costo del producto">
-        <input type="submit" value="enviar">
-    </form>
-    <!-- <p id="demo"></p> -->
-    <!-- <div id="lista-prodctos"></div> -->
+        <nav class="navegacion-cabeza">
+            <a href="#">inicio</a>
+            <a href="#">conócenos</a>
+            <a href="#">nosotros</a>
+            <a href="#">misión</a>
+            <a href="#">visión</a>
+            <a href="#">Formulario</a>
+        </nav>
+        <div class="contenedor-carrito">
+            <!-- este divisor sive como una representación de una carrito de compras -->
+            <div class="reloj">
+                <p id="fecha"></p>
+                <p id="hora"></p>
 
-    <script src="js/index.js"></script>
+            </div>
+            <div class="carrito">
+                <a href="#"><img class="imagen-carrito" src="img/carro-de-la-compra.svg" alt="carro de compras"></a>
+                <table id="contenedor-carrito">
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Eliminar</th>
+                    </tr>
+                    <!-- aquí se agregan los elementos del carrito -->
+
+                    <tr id="botones-carrito" class="botones-carrito">
+                        <td colspan="2"><a href="#">comprar</a></td>
+                        <td colspan="2"><a id="vaciar-carrito" name="vaciar" href="#">vaciar carrito</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </header>
+
+    <div id="mostrar_mensaje" class="mensaje"></div>
+
+
+    <!-- este divisor sive como una representación de una carta -->
+
+    <h2 style="text-align:center">Product Card</h2>
+    <div class="flex-contenedor" id="contenedor-cartas">
+        <!-- este divisor sive como una representación del contenedor de los productos -->
+
+    </div>
+
+
+    <div class="formulario">
+        <form id="formulario-producto">
+            <fieldset>
+                <legend>Agrega un producto llenando el siguiente formulario</legend>
+                <input type="text" id="imagen" placeholder="url imagen" value="https://aws.glamour.mx/prod/designs/v1/assets/620x354/176107.jpg">
+                <input type="text" id="nombre" placeholder="nombre del producto" value="bolsa">
+                <input type="number" id="precio" placeholder="precio" value="10" min="0" step="0.01" max="1000">
+                <input type="text" id="descripcion" placeholder="descripción" value="esta es un descripción" maxlength="100">
+                <input type="submit" value="enviar">
+            </fieldset>
+        </form>
+    </div>
+
+    <hr>
+    <footer class="flex-contenedor-footer">
+        <div>
+            <nav class="navegacion-pie">
+                <a href="#">inicio</a>
+                <a href="#">contáctanos</a>
+            </nav>
+            <p class="parrafo-footer parrafo-marca">&reg; style <span class="spam-marca">code</span> </p>
+        </div>
+        <nav class="navegacion-pie-redes">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram-square"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        </nav>
+        <div>
+            <!-- <a href="mailto:codigo.denisse463@gmail.com">codigo.denisse463@gmail.com</a> -->
+            <p class="parrafo-footer parrafo-color-grey"><i class="fas fa-envelope email-symbol"></i> codigo.denisse463@gmail.com</p>
+            <p class="parrafo-footer parrafo-color-grey">&copy; Derechos reservados</p>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

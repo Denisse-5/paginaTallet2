@@ -259,7 +259,7 @@ i {
 }
 
 input:not(input[type=submit]) {
-    margin: 8px;
+    margin: 15px;
     border: none;
     padding: 7px;
     width: 80%;
